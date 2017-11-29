@@ -3,7 +3,8 @@
 rm(list=ls())
 
 library(rvest)
-require(dplyr)
+require(dplyr) 
+
 
 aq <- read_html("https://en.wikipedia.org/wiki/Anscombe%27s_quartet")
 
