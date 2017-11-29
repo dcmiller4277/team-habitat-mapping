@@ -25,18 +25,5 @@ buoy(dataset = 'stdmet', buoyid = 44009, year = 2012)
 y <- buoy(dataset = 'stdmet', buoyid = 44009, year = 2012)
 View(res)
 y
-z <- y$wave_height
-str(y)
-d <- y$data
-d
-plot(d$wave_height)
-plot(d$wave_height,type="l")
-plot(d$time,d$wave_height,type="l")
-library("ggplot2", lib.loc="~/R/win-library/3.4")
-ggplot(d,aes(time,wave_height))+geom_line()
-n
-d$time
-class(d$time)
-tt <- as.POSIX(d$time)
-tt <- as.POSIXlt(d$time)
-ggplot(d,aes(tt,wave_height))+geom_line()
+
+
