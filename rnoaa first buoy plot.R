@@ -12,18 +12,7 @@ as.data.frame(x[which(x$station =="44009"),])
 buoy("ocean","44009",2012)
 install.packages("ncdf4")
 library("ncdf4", lib.loc="~/R/win-library/3.4")
-buoy("ocean","44009",2012)
-buoy("ocean","44009",year=2012)
-buoy("ocean","44009")
-buoy(dataset="ocean",buoy="44009")
-res <- buoys(dataset = "cwind")
-res
-buoy(dataset = 'cwind', buoyid = 46085)
-buoy(dataset = 'cwind', buoyid = 44009)
-buoy(dataset = 'stdmet', buoyid = 44009)
-buoy(dataset = 'stdmet', buoyid = 44009, year = 2012)
-y <- buoy(dataset = 'stdmet', buoyid = 44009, year = 2012)
-View(res)
-y
+
+
 
 
